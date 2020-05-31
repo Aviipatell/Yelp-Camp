@@ -54,7 +54,7 @@ mongoose.set('useUnifiedTopology', true);
 
 // Make Mongoose connect to the Database given the specificed url.
 //mongoose.connect("mongodb://localhost/yelp_camp"); //DEV PURPOSES
-mongoose.connect('mongodb+srv://avidev:'+process.env.YELPCAMP_DB_CLUSTER_PASS='@yelpcampcluster-pv4t0.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://avidev:'+process.env.YELPCAMP_DB_CLUSTER_PASS'@yelpcampcluster-pv4t0.mongodb.net/test?retryWrites=true&w=majority', {
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
